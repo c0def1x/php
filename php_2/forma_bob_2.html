@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автозапчасти от Боба</title>
+</head>
+<body>
+    <h1>Автозапчасти от Боба</h1>
+    <h2>Форма заказа</h2>
+
+    <form action="zakaz_2.php" method="post">
+        <table style="border: 0;">
+            <tr style="background-color: #ccc;">
+                <td width="150">Товар</td>
+                <td width="15">Количество</td>
+            </tr>
+            <tr>
+                <td>Автопокрышки</td>
+                <td align="left"><input type="text" name="pokr" size="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td>Машинное масло</td>
+                <td align="left"><input type="text" name="oil" size="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td>Свечи зажигания</td>
+                <td align="left"><input type="text" name="svecha" size="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td>Адрес доставки</td>
+                <td><input type="text" name="address" size="100" maxlength="200"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Отправить заказ"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
