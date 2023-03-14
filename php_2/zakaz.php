@@ -14,7 +14,7 @@ $svecha = $_POST['svecha'];
 <body>
     <h2>Результаты заказа</h2>
     <?php
-    echo "<p><font color=\"maroon\"><b>Заказ обработан<brСписок Вашего заказа></b></font><br><br>"
+    echo "<p><font color=\"maroon\"><b>Заказ обработан<brСписок Вашего заказа></b></font><br><br>";
     echo $pokr.' автопокрышек<br>';
     echo $oil.' бутылок с маслом<br>';
     echo $svecha.' свечей зажигания<br>';

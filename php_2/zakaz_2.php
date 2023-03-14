@@ -52,7 +52,7 @@ $address=$_POST['address'];
         $sumnalog = $sumdiscount * (1 + $nalogsale);
 
         echo "<p><font color=\"maroon\"><b>Заказ обработан в ".date('H:i, jS F').
-        "<brСписок Вашего заказа></b></font><br><br>"
+        "<brСписок Вашего заказа></b></font><br><br>";
         echo $pokr. 'автопокрышек<br>';
         echo $oil. 'бутылок с маслом<br>';
         echo $svecha. 'свечей зажигания<br><br>';
