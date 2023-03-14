@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Task</title>
+</head>
+<body>
+    <h1>Каталог товаров</h1>
+    <table style="border: 1px solid black;">
+        <tr>
+            <td style="border: 1px solid black;"><img src="img/ruchka.gif" alt="pen"></td>
+            <td style="border: 1px solid black;"><img src="img/kniga.gif" alt="book"></td>
+            <td style="border: 1px solid black;"><img src="img/suvenir.jpg" alt="suvenir"></td>
+            <td style="border: 1px solid black;"><img src="img/komp.jpg" alt="computer"></td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">Ручка 10 руб</td>
+            <td style="border: 1px solid black;">Книга 100 руб</td>
+            <td style="border: 1px solid black;">Сувенир 1000 руб</td>
+            <td style="border: 1px solid black;">Компьютер 10000 руб</td>
+        </tr>
+    </table>
+    <h2>Заказ</h2>
+
+    <form action="zakaz_2.php" method="post">
+        <table style="border: 0;">
+            <tr>
+                <td>Вид товара</td>
+                <td align="left"><input type="text" name="pokr" size="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td>Количество</td>
+                <td align="left"><input type="text" name="oil" size="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td>Форма оплаты</td>
+                <td align="left">
+                    <table style="border: 1px solid black;">
+                        <tr>
+                            <td style="border: 1px solid black;">Банковская карта</td>
+                            <td style="border: 1px solid black;"><input type="radio"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black;">Почтовый перевод</td>
+                            <td style="border: 1px solid black;"><input type="radio"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid black;">web-money</td>
+                            <td style="border: 1px solid black;"><input type="radio"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Фамилия Имя Отчество</td>
+                <td><input type="text" name="address" size="100" maxlength="200"></td>
+            </tr>
+            <tr>
+                <td>Адрес доставки</td>
+                <td><textarea name="address" id="" cols="97" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" value="Отправить заказ">
+                    <input type="reset" value="Очистить">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
