@@ -17,7 +17,7 @@ $type=$_POST['types'];
 			define ('BOOKPRICE',100);
 			define ('SUVENIRPRICE',1000);
 			define ('COMPUTERPRICE',10000);
-			define ('DELIV',500);
+			define ('DELIVERY',500);
 			if($count==0)
 			{
 				echo '<p><b>Вы ничего не заказали на предыдущей странице</b></p>';
@@ -38,17 +38,23 @@ $type=$_POST['types'];
 					echo 'Стоимость 1 шт. - 10 руб.<br><br>';
 					echo "Количество заказанных товаров - ".$count."<br><br>";
 					echo "Общая стоимоть заказа - ".$sumorder." руб.<br><br>";
-					echo "Стоимость доставки - ".DELIV." руб.<br><br>";
+					echo "Стоимость доставки - ".DELIVERY." руб.<br><br>";
 					echo "Налог с продаж - 18 %<br><br>";
 					if($count<5)
-					{$discount = 5;}
+					{
+						$discount = 5;
+					}
 					else if($count>=5&&$count<=10)
-					{$discount = 10;}
+					{
+						$discount = 10;
+					}
 					else if($count>10)
-					{$discount = 20;}
+					{
+						$discount = 20;
+					}
 					$priceanddisc = $sumorder * ($discount/100);	
 					$sumorderdisc = $sumorder - $priceanddisc;
-					$sumordernal = $sumorderdisc * $nalogsale + $sumorderdisc + DELIV;
+					$sumordernal = $sumorderdisc * $nalogsale + $sumorderdisc + DELIVERY;
 					echo "Ваша скидка - ".$discount." %"."($priceanddisc руб.)"."<br><br>";	
 					echo "Стоимость заказа с учётом скидки, доставки и налога с продаж - "."$sumordernal"." руб.<br><br>";
 					echo "Адрес доставки - ".$address;
@@ -61,22 +67,26 @@ $type=$_POST['types'];
 					echo 'Стоимость 1 шт. - 100 руб.<br>';
 					echo "Количество заказанных товаров - ".$count."<br><br>";
 					echo "Общая стоимоть заказа - ".$sumorder." руб.<br><br>";
-					echo "Стоимость доставки - ".DELIV." руб.<br><br>";
+					echo "Стоимость доставки - ".DELIVERY." руб.<br><br>";
 					echo "Налог с продаж - 18 %<br><br>";
 					if($count<5)
-					{$discount = 5;}
+					{
+						$discount = 5;
+					}
 					else if($count>=5&&$count<=10)
-					{$discount = 10;}
+					{
+						$discount = 10;
+					}
 					else if($count>10)
-					{$discount = 20;}
+					{
+						$discount = 20;
+					}
 					$priceanddisc = $sumorder * ($discount/100);	
 					$sumorderdisc = $sumorder - $priceanddisc;
-					$sumordernal = $sumorderdisc * $nalogsale + $sumorderdisc + DELIV;
+					$sumordernal = $sumorderdisc * $nalogsale + $sumorderdisc + DELIVERY;
 					echo "Ваша скидка - ".$discount." %"."($priceanddisc руб.)"."<br><br>";	
 					echo "Стоимость заказа с учётом скидки, доставки и налога с продаж - "."$sumordernal"." руб.<br><br>";
 					echo "Адрес доставки - ".$address;
-
-					
 				}
 				else if($type=="list_suvenir")
 				{
@@ -86,18 +96,24 @@ $type=$_POST['types'];
 					echo 'Стоимость 1 шт. - 1000 руб.<br>';
 					echo "Количество заказанных товаров - ".$count."<br><br>";
 					echo "Общая стоимоть заказа - ".$sumorder." руб.<br><br>";
-					echo "Стоимость доставки - ".DELIV." руб.<br><br>";
+					echo "Стоимость доставки - ".DELIVERY." руб.<br><br>";
 					echo "Налог с продаж - 18 %<br><br>";
 					if($count>=10&&$count<=20)
-					{$discount = 10;}
+					{
+						$discount = 10;
+					}
 					else if($count>20&&$count<=30)
-					{$discount = 20;}
+					{
+						$discount = 20;
+					}
 					else if($count>30)
-					{$discount = 40;}
+					{
+						$discount = 40;
+					}
 					$priceanddisc = $sumorder * ($discount/100);
 					$priceanddisc = $sumorder * ($discount/100);	
 					$sumorderdisc = $sumorder - $priceanddisc;
-					$sumordernal = $sumorderdisc * $nalogsale + $sumorderdisc + DELIV;
+					$sumordernal = $sumorderdisc * $nalogsale + $sumorderdisc + DELIVERY;
 					echo "Ваша скидка - ".$discount." %"."($priceanddisc руб.)"."<br><br>";	
 					echo "Стоимость заказа с учётом скидки, доставки и налога с продаж - "."$sumordernal"." руб.<br><br>";
 					echo "Адрес доставки - ".$address;
@@ -110,22 +126,29 @@ $type=$_POST['types'];
 					echo 'Стоимость 1 шт. - 10000 руб.<br>';
 					echo "Количество заказанных товаров - ".$count."<br><br>";
 					echo "Общая стоимоть заказа - ".$sumorder." руб.<br><br>";
-					echo "Стоимость доставки - ".DELIV." руб.<br><br>";
+					echo "Стоимость доставки - ".DELIVERY." руб.<br><br>";
 					echo "Налог с продаж - 18 %<br><br>";
 					if($count>=10&&$count<=20)
-					{$discount = 10;}
+					{
+						$discount = 10;
+					}
 					else if($count>20&&$count<=30)
-					{$discount = 20;}
+					{
+						$discount = 20;
+					}
 					else if($count>30)
-					{$discount = 40;}
+					{
+						$discount = 40;
+					}
 					$priceanddisc = $sumorder * ($discount/100);	
 					$sumorderdisc = $sumorder - $priceanddisc;
-					$sumordernal = $sumorderdisc * $nalogsale + $sumorderdisc + DELIV;
+					$sumordernal = $sumorderdisc * $nalogsale + $sumorderdisc + DELIVERY;
 					echo "Ваша скидка - ".$discount." %"."($priceanddisc руб.)"."<br><br>";	
 					echo "Стоимость заказа с учётом скидки, доставки и налога с продаж - "."$sumordernal"." руб.<br><br>";	
 					echo "Адрес доставки - ".$address;	
 				}
 			}
+
 		?>
 	</body>
 </html>
